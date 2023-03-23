@@ -41,5 +41,31 @@ iframe.tela {
     border-radius: 5px;
     left: 50%;
     top: 50%;
-    transform: translate(-50.15%, -49.4%);    
+    transform: translate(-50.15%, -49.4%);        
+}
+
+/* --- MENU --- */
+
+div.lista {
+    float: right;
+    margin: 10px;
+}
+
+ul>li {
+    width: 100px;
+    height: 80px;
+}
+
+a > img {
+    position: static;
+    height: 50px;
+    width: 50px;  
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+
+a > img:hover {
+    border: 1px solid white;
+    margin: 9px 5px;
+    transition: 0.3s;
 }
