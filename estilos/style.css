@@ -80,8 +80,7 @@ a > img:hover {
     /* margin: 9px 5px;
     transition: 0.3s; */
     transform: translateX(-6px);
-    transition: transform, box-shadow, 0.3s ease-out;
-
+    transition: transform, box-shadow, border, 0.3s ease-out;
     /* animation: girar 2s linear infinite; */
 }
 
