@@ -7,32 +7,36 @@
     margin-left: auto;
 }
 
-body {
+html, body {
     background-color: aqua;    
+    height: 100vh;
+    width: 100vw;
 }
 
 main {
     position: relative;
     background-image: url(../imagens/fundo-madeira.jpg);
     background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
 div.celular {
     display: inline-block;
     position: absolute;
-    height: 627px;
-    width: 311px;
-    background-image: url(../imagens/frame-iphone.png);
-    background-repeat: no-repeat;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background-image: url(../imagens/frame-iphone.png);
+    background-repeat: no-repeat;    
 }
 
 iframe.tela {    
     display: inline-block;
-    position: absolute;
+    position: relative;
     height: 475px;
     width: 270px;
     background-color: gray;
@@ -56,16 +60,37 @@ ul>li {
     height: 80px;
 }
 
-a > img {
-    position: static;
+.lista img {
+    /* position: static; */
     height: 50px;
     width: 50px;  
     border-radius: 50%;
     margin: 10px 10px;
+    border: 0px solid rgba(255, 255, 255, 0);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+    /* transition: 0.3s; */
+    transform: translateX(0);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
 a > img:hover {
-    border: 1px solid white;
-    margin: 9px 5px;
-    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.596);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+    /* margin: 9px 5px;
+    transition: 0.3s; */
+    transform: translateX(-6px);
+    transition: transform, box-shadow, 0.3s ease-out;
+
+    /* animation: girar 2s linear infinite; */
 }
+
+
+/* @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
